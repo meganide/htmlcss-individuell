@@ -18,25 +18,32 @@
     ></script>
   </head>
   <body>
-    <div class="wrapper grid">
-      <nav class="nav">
-        <ul class="nav__items">
-          <li>
-            <a href="/">
-              <aside class="nav__logo">
-                <img
-                  class="nav__img"
-                  src="assets/logo/bonz.ai-logo-white-symbol.png"
-                  alt="logo"
-                />
-                <h1 class="nav__heading">BONZ<span>.AI</span></h1>
-              </aside>
-            </a>
-          </li>
-          <li><i class="nav__hamburger-icon fa-solid fa-bars"></i></li>
-        </ul>
-      </nav>
-      <main class="main">
+    <nav class="nav">
+      <ul class="nav__items">
+        <li>
+          <a href="/">
+            <aside class="nav__logo">
+              <img
+                class="nav__img"
+                src="assets/logo/bonz.ai-logo-white-symbol.png"
+                alt="logo"
+              />
+              <h1 class="nav__heading">BONZ<span>.AI</span></h1>
+            </aside>
+          </a>
+        </li>
+        <li class="nav__hamburger">
+          <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+        </li>
+        <aside class="nav__desktop-items">
+          <li class="nav__desktop-item"><a href="/">About</a></li>
+          <li class="nav__desktop-item"><a href="/">Search</a></li>
+          <button class="btn btn--secondary">BOOK NOW</button>
+        </aside>
+      </ul>
+    </nav>
+    <main>
+      <div class="wrapper grid">
         <article class="hero">
           <h2 class="hero__title">AI DRIVEN<span>ECO LIVING</span></h2>
           <button
@@ -46,7 +53,71 @@
             BOOK NOW
           </button>
         </article>
-      </main>
-    </div>
+        <article class="living">
+          <h2 class="living__main-title">THE FUTURE OF LIVING</h2>
+          <section class="living__wrapper">
+            <article class="living__card">
+              <img
+                class="living__img"
+                src="/assets/photos/egna bilder/home-robot.webp"
+                alt="home robot"
+              />
+              <h3 class="living__title">Home Robot</h3>
+              <p class="living__text">
+                The Robots are small artificial intelligence robots designed for
+                entertaining children and patrolling the house. There are many
+                things that home robots can do, such as monitor the temperature,
+                take photos, read books, play music, and create lists.
+              </p>
+              <a
+                class="living__link"
+                href="#"
+                >Read more</a
+              >
+            </article>
+            <article class="living__card">
+              <img
+                class="living__img"
+                src="/assets/photos/egna bilder/smart-home-2.jpg"
+                alt="smart home"
+              />
+              <h3 class="living__title">Smart Room</h3>
+              <p class="living__text">
+                Artificial intelligence is used in BONZ.AI home devices to
+                respond to questions, complete tasks, and interact with humans.
+                It is possible to pair the devices with lights, thermostats,
+                speakers, and our smart TVs that can be controlled by voice
+                using voice recognition.
+              </p>
+              <a
+                class="living__link"
+                href="#"
+                >Read more</a
+              >
+            </article>
+            <article class="living__card">
+              <img
+                class="living__img"
+                src="/assets/photos/egna bilder/virtual-reality.jpg"
+                alt="ai cooking"
+              />
+              <h3 class="living__title">Virtual Reality</h3>
+              <p class="living__text">
+                Feeling bored and adventurous? The popularity of virtual reality
+                gaming in the household is growing. These games are usually
+                played with a headset. In this technology, artificial
+                intelligence software simulates a real or fictitious
+                environment.
+              </p>
+              <a
+                class="living__link"
+                href="#"
+                >Read more</a
+              >
+            </article>
+          </section>
+        </article>
+      </div>
+    </main>
   </body>
 </html>
