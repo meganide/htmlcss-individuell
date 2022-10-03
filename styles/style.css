@@ -1,4 +1,17 @@
-/* ----- Reset ----- */
+/* ------ FONTS ------ */
+@font-face {
+  font-family: robot-reavers;
+  src: url("/fonts/robot-reavers/RobotReavers.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* ----- General ----- */
+:root {
+  --primary-bg: #141414;
+  --primary-text: #F3F3F3;
+  --secondary-text: #C39A5C;
+}
 
 * {
   box-sizing: border-box;
@@ -9,5 +22,124 @@
 body {
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
+  background-color: var(--primary-bg);
+  font-family: 'Quantico', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+button {
+  font-family: 'robot-reavers', sans-serif;
+  color: var(--primary-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "nav"
+    "main"
+  ;
+}
+
+
+/* ----- UTILITIES ----- */
+.btn {
+  width: fit-content;
+  padding: .625rem 1.25rem;
+  background-color: var(--secondary-text);
+  border: none;
+  border-radius: 1px;
+  color: var(--primary-text);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-text);
+  color: var(--secondary-text);
+}
+
+/* ------ Navigation ------ */
+
+.nav {
+  grid-area: nav;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-bg);
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .625rem;
+}
+
+.nav__img {
+  height: 40px;
+  margin-right: .625rem;
+}
+
+.nav__heading {
+  color: var(--primary-text);
+  font-size: 1.5rem;
+}
+
+.nav__heading span {
+  color: var(--secondary-text);
+}
+
+.nav__hamburger-icon {
+  color: var(--primary-text);
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+
+/* ------HERO----- */
+.main {
+  grid-area: main;
+}
+
+.hero {
+  background-image: url("/assets/photos/09-night.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero__title span {
+  color: var(--secondary-text);
+}
+
+.hero__btn {
+  margin: 2rem auto;
+}
