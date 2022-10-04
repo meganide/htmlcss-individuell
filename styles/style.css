@@ -10,11 +10,10 @@
 /* ----- General ----- */
 :root {
   --primary-bg: #141414;
+  --nav-bg: #161616;
   --primary-text: #F3F3F3;
   --secondary-text: #C39A5C;
   --paragraph-text: #bebebe;
-  --nav-bg: #161616;
-  --footer-bg: #333132;
 }
 
 * {
@@ -358,9 +357,14 @@ a {
 
 /* -------- FOOTER--------- */
 .footer {
-  background-color: var(--footer-bg);
+  background-color: var(--primary-bg);
   text-align: center;
   padding: 4rem 10px;
+}
+
+.footer__items {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer__title {
@@ -430,6 +434,10 @@ a {
 /* ------------ DESKTOP -------- */
 @media screen and (min-width: 1024px) {
   /* ------ NAV -------- */
+  .nav__logo {
+    padding: 0.625rem 0;
+  }
+
   .nav__items {
     max-width: 1200px;
     margin: 0 auto;
@@ -511,19 +519,10 @@ a {
   /* ------ FOOTER ------ */
   .footer__items {
     display: flex;
-    justify-content: space-around;
-  }
-
-  .contact {
-    flex: 1;
-  }
-
-  .footer__vintage {
-    flex: 1;
+    justify-content: space-between;
   }
 
   .footer__socials {
-    flex: 1;
     margin: 0;
   }
 
