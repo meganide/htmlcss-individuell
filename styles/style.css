@@ -305,12 +305,12 @@ a {
 
 /* ---------BULLET-POINTS----------- */
 .bullet-points {
-  padding: 6rem 0;
-  background-color: var(--nav-bg);
+  padding-bottom: 6rem;
+  background-color: var(--primary-bg);
 }
 
 .bullet-points__items {
-  padding: 0 20px;
+  padding: 3rem 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -357,7 +357,7 @@ a {
 
 /* -------- FOOTER--------- */
 .footer {
-  background-color: var(--primary-bg);
+  background-color: var(--nav-bg);
   text-align: center;
   padding: 4rem 10px;
 }
@@ -450,7 +450,7 @@ a {
   .nav__desktop-items {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 1.875rem;
     margin-right: 10px;
   }
 
