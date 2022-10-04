@@ -12,7 +12,8 @@
   --primary-bg: #141414;
   --primary-text: #F3F3F3;
   --secondary-text: #C39A5C;
-  --paragraph-text: #cfcfcf;
+  --paragraph-text: #bebebe;
+  --nav-bg: #161616;
 }
 
 * {
@@ -25,8 +26,9 @@ body {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background-color: var(--primary-bg);
   font-family: 'Quantico', sans-serif;
+  height: auto;
+  background-color: var(--primary-bg);
 }
 
 h1,
@@ -38,19 +40,14 @@ button {
   color: var(--primary-text);
 }
 
+p {
+  font-family: 'Quantico', sans-serif;
+  color: var(--paragraph-text);
+}
 
 a {
   text-decoration: none;
   font-family: 'robot-reavers', sans-serif;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas:
-    "hero"
-    "living"
-  ;
 }
 
 
@@ -70,13 +67,42 @@ a {
   color: var(--secondary-text);
 }
 
-/* ------ Navigation ------ */
+.section-heading {
+  padding: 4rem 1rem;
+  text-align: center;
+  position: relative;
+  font-size: 1.8rem;
+}
 
+.section-heading::after {
+  display: inline-block;
+  content: " ";
+  width: 7.5rem;
+  border-bottom: 1px solid var(--secondary-text);
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-heading--sub {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.section-heading--sub::after {
+  width: 3.75rem;
+  border-bottom: 1px solid var(--paragraph-text);
+}
+
+
+/* ------ Navigation ------ */
 .nav {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: var(--primary-bg);
+  background-color: var(--nav-bg);
+  z-index: 2;
 }
 
 .nav__items {
@@ -117,9 +143,9 @@ a {
   display: none;
 }
 
-/* ------HERO----- */
+
+/* ------ HERO ----- */
 .hero {
-  grid-area: hero;
   background-image: url("/assets/photos/09-night.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -148,31 +174,8 @@ a {
 }
 
 
-/* ------living------- */
-.living {
-  grid-area: living;
-}
-
-.living__main-title {
-  padding: 4rem 1rem;
-  text-align: center;
-  position: relative;
-  font-size: 1.8rem;
-}
-
-.living__main-title::after {
-  display: inline-block;
-  content: " ";
-  width: 7.5rem;
-  border-bottom: 1px solid var(--secondary-text);
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-.living__card{
+/* ------ LIVING ------- */
+.living__card {
   width: 100%;
   padding: 0 20px;
   margin-bottom: 3rem;
@@ -182,33 +185,14 @@ a {
   align-items: center;
 }
 
-.living__img{
+.living__img {
   width: 100%;
   width: 280px;
   height: 200px;
   border-radius: 3px;
 }
 
-.living__title {
-  padding: 2rem 0;
-  text-align: center;
-  position: relative;
-  font-size: 1.5rem;
-}
-
-.living__title::after {
-  display: inline-block;
-  content: " ";
-  width: 3.75rem;
-  border-bottom: 1px solid var(--paragraph-text);
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .living__text {
-  color: var(--paragraph-text);
   text-align: center;
   line-height: 1.7;
   max-width: 430px;
@@ -226,9 +210,96 @@ a {
 }
 
 
+/* ------ STATS ------  */
+.stats {
+  padding: 3.5rem 0;
+  background-color: var(--secondary-text);
+}
 
-/* ------------DESKTOP-------- */
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 4rem;
+}
+
+.stats__number {
+  position: relative;
+  font-size: 3.5rem;
+}
+
+.stats__number::after {
+  content: " ";
+  position: absolute;
+  bottom: -0.9375rem;
+  left: 50%;
+  width: 3.75rem;
+  border-bottom: 1px solid var(--primary-text);
+  transform: translateX(-50%);
+}
+
+.stats__info {
+  text-align: center;
+}
+
+
+/* ------ ROOMS -------- */
+.rooms__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin: 3rem auto;
+  gap: 30px;
+}
+
+.rooms__room {
+  padding: 0 20px;
+  flex: 1;
+}
+
+.rooms_img {
+  margin: 0 auto;
+  height: 200px;
+  width: 280px;
+  border-radius: 3px;
+  background-image: url("/assets/photos/08-night.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.rooms_img:hover {
+  background-image: url("/assets/photos/08-day.jpg");
+}
+
+.rooms_title {
+  font-family: 'Quantico', sans-serif;
+}
+
+.rooms__text {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.rooms__link {
+  font-family: 'Quantico', sans-serif;
+  text-decoration: underline;
+  margin: 1rem 0;
+  color: var(--secondary-text);
+}
+
+.rooms__link {
+  display: block;
+  text-align: center;
+}
+
+
+
+
+/* ------------ DESKTOP -------- */
 @media screen and (min-width: 1024px) {
+
   /* ------ NAV -------- */
   .nav__items {
     max-width: 1200px;
@@ -259,8 +330,8 @@ a {
     border: 1px solid var(--primary-text);
   }
 
-  /* ------- HERO -------- */
 
+  /* ------- HERO -------- */
   .hero {
     min-height: calc(93vh);
     background-position: bottom;
@@ -278,7 +349,7 @@ a {
 
 
   /* ------- LIVING ------- */
-  .living__wrapper {
+  .living__cards {
     max-width: 1200px;
     margin: 3rem auto;
     display: flex;
@@ -289,4 +360,29 @@ a {
     justify-content: space-between;
   }
 
+
+  /* ------- STATS ----- */
+  .stats {
+    padding: 8rem 0;
+  }
+
+  .stats__items {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .stats__item {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1570px) {
+  .stats {
+    background-image: url("/assets//photos/egna\ bilder/cyborg.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+  }
 }
