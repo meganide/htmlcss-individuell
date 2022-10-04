@@ -838,7 +838,7 @@ select {
     z-index: 1;
     top: auto;
     left: auto;
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
 
   .sort::before {
