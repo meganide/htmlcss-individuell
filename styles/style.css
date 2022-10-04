@@ -486,8 +486,6 @@ select {
 
 /* ----- ROOM LIST ----- */
 .room-list__rooms {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -590,6 +588,7 @@ select {
   width: 100vw;
   min-height: 100vh;
 }
+
 
 .sort__header {
   display: flex;
@@ -817,6 +816,53 @@ select {
   }
 
   /* --------------------------------------------------- INDEX.HTML END ----------------------------------------------------------------- */
+
+  /* --------------------------------------------------- BOOK.HTML START ----------------------------------------------------------------- */
+
+  /* -----ROOM ----- */
+  .main__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas: 
+    "sort room-list"
+    ;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sort {
+    grid-area: sort;
+    display: block;
+    position: static;
+    width: 100%;
+    z-index: 1;
+    top: auto;
+    left: auto;
+    margin-top: 10rem;
+  }
+
+  .sort::before {
+    content: "Filter";
+    font-size: 1.3rem;
+  }
+
+  .sort__header {
+    display: none;
+  }
+  
+  .room-list__rooms {
+    grid-area: room-list;
+  }
+
+  .room-list__room {
+    max-width: 450px;
+  }
+
+  .room-list__sort {
+    display: none;
+  }
+
+  /* --------------------------------------------------- BOOK.HTML START ----------------------------------------------------------------- */
 
 }
 
