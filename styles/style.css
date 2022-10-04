@@ -117,6 +117,10 @@ select {
   text-decoration: underline;
 }
 
+.hide {
+  display: none;
+}
+
 
 /* --------------------------------------------------- INDEX.HTML START ----------------------------------------------------------------- */
 
@@ -481,7 +485,83 @@ select {
 /* --------------------------------------------------- BOOK.HTML START ----------------------------------------------------------------- */
 
 /* ----- ROOM LIST ----- */
+.room-list__rooms {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.room-list__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-list__room {
+  margin: 2rem 1rem;
+  max-width: 350px;
+}
+
+.room-list__room {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.room-list__img {
+  flex: 1;
+}
+
+.room-list__info {
+  flex: 1;
+  padding: 0 10px 1rem 10px;
+}
+
+.room-list__type {
+  font-family: 'Quantico', sans-serif;
+  margin-top: .625rem;
+}
+
+.room-list__city {
+  margin-bottom: .4375rem;
+}
+
+.room-list__icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--paragraph-text);
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.room-list__rating {
+  font-weight: bold;
+  color: var(--secondary-text);
+}
+
+.room-list__price {
+  text-align: right;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-text);
+  padding-top: 1rem;
+}
+
+.room-list__price-info {
+  text-align: right;
+  font-size: .75rem;
+}
+
+.room-list__book {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
 
 /* ------ SORT ----- */
 .showSort {
@@ -505,6 +585,8 @@ select {
   justify-content: space-between;
   padding: 1.5rem 1rem;
   background-color: var(--nav-bg);
+  position: sticky;
+  top: 0;
 }
 
 .sort__close-icon {
@@ -513,6 +595,10 @@ select {
 }
 
 .sort__close-icon:hover {
+  color: var(--primary-text);
+}
+
+.sort label {
   color: var(--primary-text);
 }
 
