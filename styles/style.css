@@ -261,11 +261,28 @@ a {
 .rooms_img {
   margin: 0 auto;
   height: 200px;
-  width: 280px;
+  width: 280;
   border-radius: 3px;
   background-image: url("/assets/photos/08-night.jpg");
   background-size: cover;
+  background-position: center;
   cursor: pointer;
+}
+
+.rooms__room-2 .rooms_img {
+  background-image: url("/assets/photos/04-night.jpg");
+}
+
+.rooms__room-2 .rooms_img:hover {
+  background-image: url("/assets/photos/04-day.jpg");
+}
+
+.rooms__room-3 .rooms_img {
+  background-image: url("/assets/photos/05-night.jpg");
+}
+
+.rooms__room-3 .rooms_img:hover {
+  background-image: url("/assets/photos/05-day.jpg");
 }
 
 .rooms_img:hover {
@@ -295,11 +312,22 @@ a {
 }
 
 
+/* -------- TABLET -------- */
+@media screen and (min-width: 630px) and (max-width: 959px) {
+  /* -------- ROOMS ------- */
+  .rooms__room-3 {
+  grid-column: span 2;
+}
+
+.rooms__room-3 figure{
+  min-height: 300px;
+  background-position: center 80%;
+}
+}
 
 
 /* ------------ DESKTOP -------- */
 @media screen and (min-width: 1024px) {
-
   /* ------ NAV -------- */
   .nav__items {
     max-width: 1200px;
@@ -379,7 +407,9 @@ a {
   }
 }
 
+/* ------ DESKTOP XL ------ */
 @media screen and (min-width: 1570px) {
+  /* ------ STATS ------ */
   .stats {
     background-image: url("/assets//photos/egna\ bilder/cyborg.png");
     background-repeat: no-repeat;
