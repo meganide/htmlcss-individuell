@@ -144,14 +144,16 @@ a {
   color: var(--secondary-text);
 }
 
-.nav__hamburger-icon, .nav__hamburger-close {
+.nav__hamburger-icon,
+.nav__hamburger-close {
   color: var(--primary-text);
   font-size: 1.5rem;
   margin-right: 0.625rem;
   cursor: pointer;
 }
 
-.nav__hamburger-close, .fa-solid.fa-xmark {
+.nav__hamburger-close,
+.fa-solid.fa-xmark {
   display: none;
 }
 
@@ -389,7 +391,7 @@ a {
 
 .bullet-points__heading {
   padding: 0;
-  position:static;
+  position: static;
   font-size: 1.2rem;
   width: max-content;
 }
@@ -441,7 +443,8 @@ a {
   margin-bottom: 1rem;
 }
 
-.footer h2, .footer p{
+.footer h2,
+.footer p {
   font-family: 'Quantico', sans-serif;
 }
 
@@ -467,20 +470,22 @@ a {
 
 /* -------- TABLET -------- */
 @media screen and (min-width: 630px) and (max-width: 959px) {
+
   /* -------- ROOMS ------- */
   .rooms__room-3 {
-  grid-column: span 2;
-}
+    grid-column: span 2;
+  }
 
-.rooms__room-3 figure{
-  min-height: 300px;
-  background-position: center 80%;
-}
+  .rooms__room-3 figure {
+    min-height: 300px;
+    background-position: center 80%;
+  }
 }
 
 
 /* ------------ DESKTOP -------- */
 @media screen and (min-width: 1024px) {
+
   /* ------ NAV -------- */
   .nav__logo {
     padding: 0.625rem 0;
@@ -584,6 +589,7 @@ a {
 
 /* ------ DESKTOP XL ------ */
 @media screen and (min-width: 1570px) {
+
   /* ------ STATS ------ */
   .stats {
     background-image: url("/assets//photos/egna\ bilder/cyborg.png");
