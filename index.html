@@ -34,18 +34,32 @@
         </li>
         <li class="nav__hamburger">
           <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+          <i class="nav__hamburger-close fa-solid fa-xmark"></i>
         </li>
         <aside class="nav__desktop-items">
-          <li class="nav__desktop-item"><a href="/">Search</a></li>
           <li class="nav__desktop-item"><a href="/">Rooms</a></li>
           <li class="nav__desktop-item"><a href="/">Discounts</a></li>
           <li class="nav__desktop-item"><a href="/">About</a></li>
           <li class="nav__desktop-item"><a href="/">FAQ</a></li>
           <li class="nav__desktop-item"><a href="/">Contact</a></li>
         </aside>
-        <li class="nav__desktop-items"><button class="btn btn--secondary">BOOK NOW</button></li>
+        <li class="nav__desktop-items">
+          <button class="btn btn--secondary">BOOK NOW</button>
+        </li>
       </ul>
     </nav>
+
+    <aside class="sidebar-mobile">
+      <ul class="sidebar-mobile__list">
+        <li><a class="sidebar-mobile__item" href="/">Home</a></li>
+        <li><a class="sidebar-mobile__item" href="/">Rooms</a></li>
+        <li><a class="sidebar-mobile__item" href="/">Discounts</a></li>
+        <li><a class="sidebar-mobile__item" href="/">About</a></li>
+        <li><a class="sidebar-mobile__item" href="/">FAQ</a></li>
+        <li><a class="sidebar-mobile__item" href="/">Contact</a></li>
+      </ul>
+    </aside>
+
     <main>
       <article class="hero">
         <h2 class="hero__title">AI DRIVEN<span>ECO LIVING</span></h2>
@@ -125,19 +139,39 @@
       <article class="stats">
         <section class="stats__items">
           <article class="stats__item">
-            <h2 class="stats__number" data-val="1337">0</h2>
+            <h2
+              class="stats__number"
+              data-val="1337"
+            >
+              0
+            </h2>
             <h3 class="stats__info">Rooms</h3>
           </article>
           <article class="stats__item">
-            <h2 class="stats__number" data-val="1600">0</h2>
+            <h2
+              class="stats__number"
+              data-val="1600"
+            >
+              0
+            </h2>
             <h3 class="stats__info">Robots</h3>
           </article>
           <article class="stats__item">
-            <h2 class="stats__number percentage" data-val="100">0%</h2>
+            <h2
+              class="stats__number percentage"
+              data-val="100"
+            >
+              0%
+            </h2>
             <h3 class="stats__info">Happy Customers</h3>
           </article>
           <article class="stats__item">
-            <h2 class="stats__number exp" data-val="10">0/10</h2>
+            <h2
+              class="stats__number exp"
+              data-val="10"
+            >
+              0/10
+            </h2>
             <h3 class="stats__info">Experience</h3>
           </article>
         </section>
@@ -354,6 +388,9 @@
     </footer>
 
     <!-- Script -->
-    <script type="module" src="js/index.js"></script>
+    <script
+      type="module"
+      src="js/index.js"
+    ></script>
   </body>
 </html>
