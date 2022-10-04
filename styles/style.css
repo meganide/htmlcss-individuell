@@ -491,12 +491,17 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 5rem;
 }
 
 .room-list__title {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.room-list__sort {
+  background-color: rgb(50, 50, 50);
 }
 
 .room-list__room {
@@ -509,7 +514,7 @@ select {
   flex-direction: column;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .room-list__img {
@@ -519,11 +524,13 @@ select {
 .room-list__info {
   flex: 1;
   padding: 0 10px 1rem 10px;
+  background-color: var(--nav-bg);
 }
 
 .room-list__type {
   font-family: 'Quantico', sans-serif;
   margin-top: .625rem;
+  font-size: 1.4rem;
 }
 
 .room-list__city {
@@ -539,16 +546,20 @@ select {
   margin-bottom: 0.5rem;
 }
 
+.room-list__review-text {
+  font-size: 1.1rem;
+}
+
 .room-list__rating {
   font-weight: bold;
-  color: var(--secondary-text);
+  color: rgb(34, 126, 34);
 }
 
 .room-list__price {
   text-align: right;
   font-size: 2rem;
   font-weight: bold;
-  color: var(--secondary-text);
+  color: #886530;
   padding-top: 1rem;
 }
 
