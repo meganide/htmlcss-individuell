@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BONZ.AI - BOOK</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- Font awesome icon library import -->
+    <script
+      src="https://kit.fontawesome.com/8bb946769b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navigation for PC & Mobile -->
+    <nav class="nav">
+      <ul class="nav__items">
+        <li>
+          <a href="/">
+            <aside class="nav__logo">
+              <img
+                class="nav__img"
+                src="../assets/logo/bonz.ai-logo-white-symbol.png"
+                alt="logo"
+              />
+              <h1 class="nav__heading">BONZ<span>.AI</span></h1>
+            </aside>
+          </a>
+        </li>
+        <li class="nav__hamburger">
+          <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+          <i class="nav__hamburger-close fa-solid fa-xmark"></i>
+        </li>
+        <aside class="nav__desktop-items">
+          <li class="nav__desktop-item active-link">
+            <a href="./book.html">Rooms</a>
+          </li>
+          <li class="nav__desktop-item"><a href="/">Discounts</a></li>
+          <li class="nav__desktop-item"><a href="/">About</a></li>
+          <li class="nav__desktop-item"><a href="/">FAQ</a></li>
+          <li class="nav__desktop-item"><a href="/">Contact</a></li>
+        </aside>
+        <li class="nav__desktop-items">
+          <button
+            onclick="window.location.href = './book.html'"
+            class="btn btn--secondary"
+          >
+            BOOK NOW
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <aside class="sidebar-mobile">
+      <ul class="sidebar-mobile__list">
+        <li>
+          <a class="sidebar-mobile__item" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item active-link" href="./book.html"
+            >Rooms</a
+          >
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="/">Discounts</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="/">About</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="/">FAQ</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="/">Contact</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <article class="room-list">
+        <section class="room-list__title">
+          <h2>Room List</h2>
+          <button class="room-list__sort btn">Sort and Filter</button>
+        </section>
+
+        <!-- SORT OPTIONS - HIDDEN BY DEFAULT -->
+        <aside class="sort">
+          <h3>Reservation</h3>
+
+          <section class="sort__checkboxes">
+            <section class="sort__checkbox">
+              <input type="checkbox" id="casino" name="casino" />
+              <label for="casino">Casino</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="garage" name="garage" />
+              <label for="garage">Garage Space</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="health-club" name="health-club" />
+              <label for="health-club">Health Club</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="minibar" name="minibar" />
+              <label for="minibar">Minibar</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="parking" name="parking" />
+              <label for="parking">Parking</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="wifi" name="wifi" />
+              <label for="wifi">Wi-Fi</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="robot" name="robot" />
+              <label for="robot">Robot</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="sauna" name="sauna" />
+              <label for="sauna">Sauna</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="room-service" name="room-service" />
+              <label for="room-service">Room Service</label>
+            </section>
+          </section>
+
+          <section class="sort__options">
+            <section class="sort__option">
+              <label for="location">CHOOSE A LOCATION</label>
+              <select id="location" name="location">
+                <option>All</option>
+                <option>Stockholm</option>
+                <option>Gothenburg</option>
+                <option>New York</option>
+                <option>Paris</option>
+                <option>Rome</option>
+              </select>
+            </section>
+            <section class="sort__option">
+              <label for="rooms-amount">ROOMS</label>
+              <select id="rooms-amount" name="rooms-amount">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </section>
+            <section class="sort__option">
+              <label for="date-check-in">CHECK IN</label>
+              <input type="date" id="date-check-in" name="date-check-in" />
+            </section>
+            <section class="sort__option">
+              <label for="date-check-out">CHECK OUT</label>
+              <input type="date" id="date-check-out" name="date-check-out" />
+            </section>
+          </section>
+
+          <section class="sort__checkboxes">
+            <section class="sort__checkbox">
+              <input type="checkbox" id="air-condition" name="air-condition" />
+              <label for="air-condition">Air Conditioner</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="free-internet" name="free-internet" />
+              <label for="free-internet">Free Internet</label>
+            </section>
+            <section class="sort__checkbox">
+              <input type="checkbox" id="microwave" name="microwave" />
+              <label for="microwave">Microwave</label>
+            </section>
+          </section>
+
+          <section class="sort__options">
+            <section class="sort__option">
+              <label for="adults">ADULTS</label>
+              <select id="adults" name="adults">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+              </select>
+            </section>
+            <section class="sort__option">
+              <label for="children">CHILDREN</label>
+              <select id="children" name="children">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+              </select>
+            </section>
+          </section>
+
+          <section class="price-slider">
+            <label for="price-slider">PRICE RANGE</label>
+            <p>From $0 to $<span class="price-output"></span></p>
+            <input
+              type="range"
+              name="price-slider"
+              id="price-slider"
+              min="25"
+              max="1000"
+              value="200"
+            />
+          </section>
+
+          <button class="btn" type="submit">FILTER RESULTS</button>
+        </aside>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__items">
+        <section class="contact">
+          <h2 class="footer__title">Contact</h2>
+          <address class="footer__address">
+            <p>42 Robot Street, New York City, NY</p>
+            <a class="link" href="mailto:support@bonz.ai">support@bonz.ai</a>
+            <p>(+090) 123 456</p>
+          </address>
+          <article class="footer__payment">
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+          </article>
+        </section>
+        <section class="footer__vintage">
+          <h2 class="footer__title-2">VINTAGE</h2>
+          <p class="footer_vintage-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+            placeat rem eum delectus illum cupiditate ab tempora, laboriosam
+            nihil nulla.
+          </p>
+        </section>
+        <article class="footer__socials">
+          <h2 class="footer__socials-title">Socials</h2>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </article>
+      </section>
+      <p class="footer__copyright">&copy; 2022 BONZ.AI</p>
+    </footer>
+
+    <!-- Script -->
+    <script type="module" src="../js/index.js"></script>
+  </body>
+</html>
