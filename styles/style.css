@@ -50,6 +50,13 @@ a {
   font-family: 'robot-reavers', sans-serif;
 }
 
+input,
+select {
+  font-family: 'Quantico', sans-serif;
+
+}
+
+
 
 /* ----- UTILITIES GLOBAL ----- */
 .link {
@@ -158,8 +165,7 @@ a {
   cursor: pointer;
 }
 
-.nav__hamburger-close,
-.fa-solid.fa-xmark {
+.nav__hamburger-close.fa-solid.fa-xmark {
   display: none;
 }
 
@@ -402,6 +408,10 @@ a {
   width: max-content;
 }
 
+.bullet-points__heading.section-heading::after {
+  content: none;
+}
+
 
 /* -------- FOOTER--------- */
 .footer {
@@ -464,27 +474,112 @@ a {
   color: var(--primary-text);
   cursor: pointer;
 }
+
 /* --------------------------------------------------- INDEX.HTML END ----------------------------------------------------------------- */
 
 
 /* --------------------------------------------------- BOOK.HTML START ----------------------------------------------------------------- */
-.room-list {
 
+/* ----- ROOM LIST ----- */
+
+
+/* ------ SORT ----- */
+.showSort {
+  display: block !important;
 }
 
 .sort {
+  display: none;
   color: var(--paragraph-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  background-color: var(--primary-bg);
+  width: 100vw;
+  min-height: 100vh;
 }
 
+.sort__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  background-color: var(--nav-bg);
+}
+
+.sort__close-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.sort__close-icon:hover {
+  color: var(--primary-text);
+}
+
+.sort__wrapper {
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.sort select,
+.sort input {
+  max-width: 400px;
+}
 
 .sort__checkboxes {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .sort__option {
   display: flex;
   flex-direction: column;
+  margin: 1rem 0;
+}
+
+.sort__option label {
+  margin-bottom: 3px;
+}
+
+.sort__price-text {
+  font-size: .875rem;
+  margin-bottom: .3125rem;
+}
+
+#price-slider {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--paragraph-text);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 3px;
+}
+
+#price-slider:hover {
+  opacity: 1;
+}
+
+#price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-text);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#price-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-text);
+  cursor: pointer;
 }
 
 
@@ -506,7 +601,7 @@ a {
 
 /* -------- TABLET -------- */
 @media screen and (min-width: 630px) and (max-width: 959px) {
-/* --------------------------------------------------- INDEX.HTML START ----------------------------------------------------------------- */
+  /* --------------------------------------------------- INDEX.HTML START ----------------------------------------------------------------- */
 
   /* -------- ROOMS ------- */
   .rooms__room-3 {
@@ -518,14 +613,15 @@ a {
     background-position: center 80%;
   }
 
-/* --------------------------------------------------- INDEX.HTML END ----------------------------------------------------------------- */
+  /* --------------------------------------------------- INDEX.HTML END ----------------------------------------------------------------- */
 
 }
 
 
 /* ------------ DESKTOP -------- */
 @media screen and (min-width: 1024px) {
-/* --------------------------------------------------- INDEX.HTML START ----------------------------------------------------------------- */
+
+  /* --------------------------------------------------- INDEX.HTML START ----------------------------------------------------------------- */
   /* ------ NAV -------- */
   .nav__logo {
     padding: 0.625rem 0;
@@ -623,14 +719,14 @@ a {
     margin-top: 3rem;
   }
 
-/* --------------------------------------------------- INDEX.HTML END ----------------------------------------------------------------- */
+  /* --------------------------------------------------- INDEX.HTML END ----------------------------------------------------------------- */
 
 }
 
 
 /* ------ DESKTOP XL ------ */
 @media screen and (min-width: 1570px) {
-/* --------------------------------------------------- INDEX.HTML START ----------------------------------------------------------------- */
+  /* --------------------------------------------------- INDEX.HTML START ----------------------------------------------------------------- */
 
   /* ------ STATS ------ */
   .stats {
@@ -639,7 +735,7 @@ a {
     background-position: 97%;
   }
 
-/* --------------------------------------------------- INDEX.HTML END ----------------------------------------------------------------- */
+  /* --------------------------------------------------- INDEX.HTML END ----------------------------------------------------------------- */
 
 }
 

@@ -86,143 +86,158 @@
 
         <!-- SORT OPTIONS - HIDDEN BY DEFAULT -->
         <aside class="sort">
-          <h3>Reservation</h3>
+          <aside class="sort__header">
+            <h3>Reservation</h3>
+            <i class="sort__close-icon fa-solid fa-xmark"></i>
+          </aside>
 
-          <section class="sort__checkboxes">
-            <section class="sort__checkbox">
-              <input type="checkbox" id="casino" name="casino" />
-              <label for="casino">Casino</label>
+          <section class="sort__wrapper">
+            <section class="sort__checkboxes">
+              <section class="sort__checkbox">
+                <input type="checkbox" id="casino" name="casino" />
+                <label for="casino">Casino</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="garage" name="garage" />
+                <label for="garage">Garage Space</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="health-club" name="health-club" />
+                <label for="health-club">Health Club</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="minibar" name="minibar" />
+                <label for="minibar">Minibar</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="parking" name="parking" />
+                <label for="parking">Parking</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="wifi" name="wifi" />
+                <label for="wifi">Wi-Fi</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="robot" name="robot" />
+                <label for="robot">Robot</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="sauna" name="sauna" />
+                <label for="sauna">Sauna</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="room-service" name="room-service" />
+                <label for="room-service">Room Service</label>
+              </section>
             </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="garage" name="garage" />
-              <label for="garage">Garage Space</label>
+
+            <section class="sort__options">
+              <section class="sort__option">
+                <label for="location">CHOOSE A LOCATION</label>
+                <select id="location" name="location">
+                  <option>All</option>
+                  <option>Stockholm</option>
+                  <option>Gothenburg</option>
+                  <option>New York</option>
+                  <option>Paris</option>
+                  <option>Rome</option>
+                </select>
+              </section>
+              <section class="sort__option">
+                <label for="rooms-amount">ROOMS</label>
+                <select id="rooms-amount" name="rooms-amount">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </section>
+              <section class="sort__option">
+                <label for="date-check-in">CHECK IN</label>
+                <input type="date" id="date-check-in" name="date-check-in" />
+              </section>
+              <section class="sort__option">
+                <label for="date-check-out">CHECK OUT</label>
+                <input type="date" id="date-check-out" name="date-check-out" />
+              </section>
             </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="health-club" name="health-club" />
-              <label for="health-club">Health Club</label>
+
+            <section class="sort__checkboxes">
+              <section class="sort__checkbox">
+                <input
+                  type="checkbox"
+                  id="air-condition"
+                  name="air-condition"
+                />
+                <label for="air-condition">Air Conditioner</label>
+              </section>
+              <section class="sort__checkbox">
+                <input
+                  type="checkbox"
+                  id="free-internet"
+                  name="free-internet"
+                />
+                <label for="free-internet">Free Internet</label>
+              </section>
+              <section class="sort__checkbox">
+                <input type="checkbox" id="microwave" name="microwave" />
+                <label for="microwave">Microwave</label>
+              </section>
             </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="minibar" name="minibar" />
-              <label for="minibar">Minibar</label>
+
+            <section class="sort__options">
+              <section class="sort__option">
+                <label for="adults">ADULTS</label>
+                <select id="adults" name="adults">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>
+              </section>
+              <section class="sort__option">
+                <label for="children">CHILDREN</label>
+                <select id="children" name="children">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>
+              </section>
             </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="parking" name="parking" />
-              <label for="parking">Parking</label>
+
+            <section class="price-slider">
+              <label for="price-slider">PRICE RANGE</label>
+              <p class="sort__price-text">From $0 to $<span class="price-output"></span></p>
+              <input
+                type="range"
+                name="price-slider"
+                id="price-slider"
+                min="25"
+                max="1000"
+                value="200"
+              />
             </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="wifi" name="wifi" />
-              <label for="wifi">Wi-Fi</label>
-            </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="robot" name="robot" />
-              <label for="robot">Robot</label>
-            </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="sauna" name="sauna" />
-              <label for="sauna">Sauna</label>
-            </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="room-service" name="room-service" />
-              <label for="room-service">Room Service</label>
-            </section>
+
+            <button class="sort__filter-btn btn" type="submit">
+              FILTER RESULTS
+            </button>
           </section>
-
-          <section class="sort__options">
-            <section class="sort__option">
-              <label for="location">CHOOSE A LOCATION</label>
-              <select id="location" name="location">
-                <option>All</option>
-                <option>Stockholm</option>
-                <option>Gothenburg</option>
-                <option>New York</option>
-                <option>Paris</option>
-                <option>Rome</option>
-              </select>
-            </section>
-            <section class="sort__option">
-              <label for="rooms-amount">ROOMS</label>
-              <select id="rooms-amount" name="rooms-amount">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-              </select>
-            </section>
-            <section class="sort__option">
-              <label for="date-check-in">CHECK IN</label>
-              <input type="date" id="date-check-in" name="date-check-in" />
-            </section>
-            <section class="sort__option">
-              <label for="date-check-out">CHECK OUT</label>
-              <input type="date" id="date-check-out" name="date-check-out" />
-            </section>
-          </section>
-
-          <section class="sort__checkboxes">
-            <section class="sort__checkbox">
-              <input type="checkbox" id="air-condition" name="air-condition" />
-              <label for="air-condition">Air Conditioner</label>
-            </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="free-internet" name="free-internet" />
-              <label for="free-internet">Free Internet</label>
-            </section>
-            <section class="sort__checkbox">
-              <input type="checkbox" id="microwave" name="microwave" />
-              <label for="microwave">Microwave</label>
-            </section>
-          </section>
-
-          <section class="sort__options">
-            <section class="sort__option">
-              <label for="adults">ADULTS</label>
-              <select id="adults" name="adults">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-              </select>
-            </section>
-            <section class="sort__option">
-              <label for="children">CHILDREN</label>
-              <select id="children" name="children">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-              </select>
-            </section>
-          </section>
-
-          <section class="price-slider">
-            <label for="price-slider">PRICE RANGE</label>
-            <p>From $0 to $<span class="price-output"></span></p>
-            <input
-              type="range"
-              name="price-slider"
-              id="price-slider"
-              min="25"
-              max="1000"
-              value="200"
-            />
-          </section>
-
-          <button class="btn" type="submit">FILTER RESULTS</button>
         </aside>
       </article>
     </main>
