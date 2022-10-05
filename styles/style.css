@@ -517,6 +517,7 @@ select {
 
 .room-list__img {
   flex: 1;
+  max-height: 260px;
 }
 
 .room-list__info {
