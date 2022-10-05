@@ -681,10 +681,114 @@ select {
 /* --------------------------------------------------- BOOK.HTML END ----------------------------------------------------------------- */
 
 /* --------------------------------------------------- ABOUT.HTML START ----------------------------------------------------------------- */
+#particles-js {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* height: 620vh; */
+  min-height: 100vh;
+  height: 620vh;
+}
 
+.about-wrapper {
+  position: absolute;
+  max-width: 1200px;
+  width: 100%;
+}
 
+.about {
+  padding: 0 .9375rem;
+  width: 100%;
+}
 
+.about img {
+  opacity: 60%;
+  border-radius: 3px;
+  max-width: 500px;
+  width: 100%;
+  margin: 1rem 0;
+}
 
+.about p {
+  text-align: center;
+  max-width: 800px;
+}
+
+.about__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.about__intro img {
+  max-width: 800px;
+}
+
+.about__facilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.about__facility-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 40px;
+}
+
+.about__colleagues {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.about__persons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+.about__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__person-img {
+  border-radius: 50% !important;
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover;
+  margin-bottom: 0 !important;
+}
+
+.about__person-img--rodriguez {
+  object-position: 100%;
+}
+
+.about__person-img--ceo {
+  min-width: 280px;
+  min-height: 280px;
+  object-position: 80%;
+}
+
+.about__person-name {
+  font-family: 'Quantico', sans-serif;
+  font-size: 1.4rem;
+}
+
+.about__person-job {
+  text-align: left !important;
+}
 
 
 
