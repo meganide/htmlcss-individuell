@@ -8,6 +8,9 @@ function main() {
   if (window.location.href.includes('book.html')) {
     showSortAndFilter();
     priceSlider();
+  } else if (window.location.href.includes('about.html')) {
+    particlesJS.load('particles-js', '../assets/particlesjs-config.json', function () {
+    });
   } else {
     countAnimation();
   }

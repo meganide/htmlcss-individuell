@@ -271,7 +271,7 @@ select {
 /* ------ STATS ------  */
 .stats {
   padding: 3.5rem 0;
-  background-color: var(--secondary-text);
+  background-color: #c39a5c91;
 }
 
 .stats__item {
@@ -678,11 +678,18 @@ select {
   cursor: pointer;
 }
 
-
-
-
-
 /* --------------------------------------------------- BOOK.HTML END ----------------------------------------------------------------- */
+
+/* --------------------------------------------------- ABOUT.HTML START ----------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------- ABOUT.HTML END ----------------------------------------------------------------- */
+
 
 
 
@@ -820,11 +827,11 @@ select {
   /* --------------------------------------------------- BOOK.HTML START ----------------------------------------------------------------- */
 
   /* -----ROOM ----- */
-  .main__wrapper{
+  .main__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-areas: 
-    "sort room-list"
+    grid-template-areas:
+      "sort room-list"
     ;
     max-width: 1200px;
     margin: 0 auto;
@@ -849,7 +856,7 @@ select {
   .sort__header {
     display: none;
   }
-  
+
   .room-list__rooms {
     grid-area: room-list;
   }
