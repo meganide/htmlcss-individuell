@@ -685,9 +685,8 @@ select {
   position: relative;
   display: flex;
   justify-content: center;
-  /* height: 620vh; */
-  min-height: 100vh;
   height: 620vh;
+  max-height: 3450px;
 }
 
 .about-wrapper {
@@ -975,6 +974,12 @@ select {
 
   /* --------------------------------------------------- BOOK.HTML START ----------------------------------------------------------------- */
 
+}
+
+@media screen and (min-width: 1070px) {
+  #particles-js {
+    max-height: 2800px;
+  }
 }
 
 
