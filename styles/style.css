@@ -1,13 +1,14 @@
 /* ------ FONTS ------ */
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* Custom font locally */
 @font-face {
   font-family: robot-reavers;
   src: url("/fonts/robot-reavers/RobotReavers.ttf");
 }
 
 
-/* ----- General GLOBAL ----- */
+/* ----- General ----- */
 :root {
   --primary-bg: #141414;
   --nav-bg: #161616;
@@ -57,8 +58,7 @@ select {
 }
 
 
-
-/* ----- UTILITIES GLOBAL ----- */
+/* ----- UTILITIES ----- */
 .link {
   font-family: 'Quantico', sans-serif;
   text-decoration: underline;
@@ -804,7 +804,6 @@ select {
 }
 
 
-
 /* -------- TABLET -------- */
 @media screen and (min-width: 630px) and (max-width: 959px) {
   /* --------------------------------------------------- INDEX.HTML START ----------------------------------------------------------------- */
@@ -972,7 +971,7 @@ select {
     display: none;
   }
 
-  /* --------------------------------------------------- BOOK.HTML START ----------------------------------------------------------------- */
+  /* --------------------------------------------------- BOOK.HTML END ----------------------------------------------------------------- */
 
 }
 
